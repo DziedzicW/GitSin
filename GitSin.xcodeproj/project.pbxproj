@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		396152631C5633BE003AC042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 396152621C5633BE003AC042 /* main.m */; };
+		3961526B1C5638F2003AC042 /* SSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3961526A1C5638F2003AC042 /* SSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		3961525F1C5633BE003AC042 /* GitSin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GitSin; sourceTree = BUILT_PRODUCTS_DIR; };
 		396152621C5633BE003AC042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		396152691C5638F2003AC042 /* SSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSingleton.h; sourceTree = "<group>"; };
+		3961526A1C5638F2003AC042 /* SSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				396152621C5633BE003AC042 /* main.m */,
+				396152691C5638F2003AC042 /* SSingleton.h */,
+				3961526A1C5638F2003AC042 /* SSingleton.m */,
 			);
 			path = GitSin;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				396152631C5633BE003AC042 /* main.m in Sources */,
+				3961526B1C5638F2003AC042 /* SSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

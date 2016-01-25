@@ -7,11 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "SSingleton.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        SSingleton* nextTry = [SSingleton nextTry];
+
+        NSLog(@"%p", nextTry);
+        
+        SSingleton* nextTry4 = [SSingleton nextTry];
+        
+        NSLog(@"%p", nextTry4);
+        
+        
     }
     return 0;
 }
