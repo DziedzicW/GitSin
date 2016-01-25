@@ -1,0 +1,259 @@
+Last login: Sun Jan 24 20:14:19 on ttys000
+Developers-MacBook-Pro:~ WojtekDz.$ ls
+Desktop			FlightScopePractice	Pictures
+Documents		Library			Public
+Downloads		Movies
+FlighMath		Music
+Developers-MacBook-Pro:~ WojtekDz.$ cd desktop
+Developers-MacBook-Pro:desktop WojtekDz.$ ls
+21.01				Pętle
+Bob				Rodział 4
+BobTheBuldier - Wojtek		Rozdział 3
+BobTheBuldier - Wojtek.zip	Samodzielnie
+CoinToss			Singleton
+Ćwiczenia - tablice		Zadanie3
+Figury				Zadanie5
+FlighMath			betgte
+FlightScopePractice		lol
+JesteProgramista		nic
+KVO				test
+MMVC				zadanie
+Panieńskin Moni			zdjecia
+Developers-MacBook-Pro:desktop WojtekDz.$ cd test
+Developers-MacBook-Pro:test WojtekDz.$ ls
+Developers-MacBook-Pro:test WojtekDz.$ touch gites.txt
+Developers-MacBook-Pro:test WojtekDz.$ ls
+gites.txt
+Developers-MacBook-Pro:test WojtekDz.$ git remote -v
+
+origin	https://github.com/DziedzicW/GitTest.git (fetch)
+origin	https://github.com/DziedzicW/GitTest.git (push)
+stream	git@github.com:DziedzicW/TestOfGitHub.git (fetch)
+stream	git@github.com:DziedzicW/TestOfGitHub.git (push)
+upstream	git@github.com:DziedzicW/FlighMath.git (fetch)
+upstream	git@github.com:DziedzicW/FlighMath.git (push)
+Developers-MacBook-Pro:test WojtekDz.$
+Developers-MacBook-Pro:test WojtekDz.$ git init
+Initialized empty Git repository in /Users/WojtekDz./Desktop/test/.git/
+Developers-MacBook-Pro:test WojtekDz.$ ls
+gites.txt
+Developers-MacBook-Pro:test WojtekDz.$ ls
+gites.txt
+Developers-MacBook-Pro:test WojtekDz.$ cd
+Developers-MacBook-Pro:~ WojtekDz.$ ls
+Desktop			FlightScopePractice	Pictures
+Documents		Library			Public
+Downloads		Movies
+FlighMath		Music
+Developers-MacBook-Pro:~ WojtekDz.$ desktop
+-bash: desktop: command not found
+Developers-MacBook-Pro:~ WojtekDz.$ cd desktop
+Developers-MacBook-Pro:desktop WojtekDz.$ ls
+21.01				Pętle
+Bob				Rodział 4
+BobTheBuldier - Wojtek		Rozdział 3
+BobTheBuldier - Wojtek.zip	Samodzielnie
+CoinToss			Singleton
+Ćwiczenia - tablice		Zadanie3
+Figury				Zadanie5
+FlighMath			betgte
+FlightScopePractice		lol
+GitSin				nic
+JesteProgramista		test
+KVO				zadanie
+MMVC				zdjecia
+Panieńskin Moni
+Developers-MacBook-Pro:desktop WojtekDz.$ cd GitSin
+Developers-MacBook-Pro:GitSin WojtekDz.$ ls
+GitSin			GitSin.xcodeproj
+Developers-MacBook-Pro:GitSin WojtekDz.$ git init
+Initialized empty Git repository in /Users/WojtekDz./Desktop/GitSin/.git/
+Developers-MacBook-Pro:GitSin WojtekDz.$ git remote -v
+Developers-MacBook-Pro:GitSin WojtekDz.$ git remote add origin git@github.com:DziedzicW/GitSin.git
+Developers-MacBook-Pro:GitSin WojtekDz.$ git remote -v
+origin	git@github.com:DziedzicW/GitSin.git (fetch)
+origin	git@github.com:DziedzicW/GitSin.git (push)
+Developers-MacBook-Pro:GitSin WojtekDz.$ git fetch -p
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From github.com:DziedzicW/GitSin
+ * [new branch]      master     -> origin/master
+Developers-MacBook-Pro:GitSin WojtekDz.$ git branch -a
+  remotes/origin/master
+Developers-MacBook-Pro:GitSin WojtekDz.$ git checkout -b branchLokalny
+Switched to a new branch 'branchLokalny'
+Developers-MacBook-Pro:GitSin WojtekDz.$ ls
+GitSin			GitSin.xcodeproj
+Developers-MacBook-Pro:GitSin WojtekDz.$ git status
+On branch branchLokalny
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	GitSin.xcodeproj/
+	GitSin/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Developers-MacBook-Pro:GitSin WojtekDz.$ git add .
+Developers-MacBook-Pro:GitSin WojtekDz.$ status
+-bash: status: command not found
+Developers-MacBook-Pro:GitSin WojtekDz.$ git status
+On branch branchLokalny
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   GitSin.xcodeproj/project.pbxproj
+	new file:   GitSin.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	new file:   GitSin.xcodeproj/project.xcworkspace/xcuserdata/WojtekDz..xcuserdatad/UserInterfaceState.xcuserstate
+	new file:   GitSin.xcodeproj/xcuserdata/WojtekDz..xcuserdatad/xcschemes/GitSin.xcscheme
+	new file:   GitSin.xcodeproj/xcuserdata/WojtekDz..xcuserdatad/xcschemes/xcschememanagement.plist
+	new file:   GitSin/main.m
+
+Developers-MacBook-Pro:GitSin WojtekDz.$ git commit -a -m "Nic"
+[branchLokalny (root-commit) 26e0e36] Nic
+ Committer: DziedzicW <WojtekDz.@Developers-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 6 files changed, 381 insertions(+)
+ create mode 100644 GitSin.xcodeproj/project.pbxproj
+ create mode 100644 GitSin.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 GitSin.xcodeproj/project.xcworkspace/xcuserdata/WojtekDz..xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 GitSin.xcodeproj/xcuserdata/WojtekDz..xcuserdatad/xcschemes/GitSin.xcscheme
+ create mode 100644 GitSin.xcodeproj/xcuserdata/WojtekDz..xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 GitSin/main.m
+Developers-MacBook-Pro:GitSin WojtekDz.$ git status
+On branch branchLokalny
+nothing to commit, working directory clean
+Developers-MacBook-Pro:GitSin WojtekDz.$ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:DziedzicW/GitSin.git'
+Developers-MacBook-Pro:GitSin WojtekDz.$ git branch -a
+* branchLokalny
+  remotes/origin/master
+Developers-MacBook-Pro:GitSin WojtekDz.$ git pull origin master
+From github.com:DziedzicW/GitSin
+ * branch            master     -> FETCH_HEAD
+error: There was a problem with the editor 'vi'.
+Not committing merge; use 'git commit' to complete the merge.
+Developers-MacBook-Pro:GitSin WojtekDz.$ git branch -a
+* branchLokalny
+  remotes/origin/master
+Developers-MacBook-Pro:GitSin WojtekDz.$ git status
+On branch branchLokalny
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	new file:   .gitignore
+	new file:   LICENSE
+
+Developers-MacBook-Pro:GitSin WojtekDz.$ git commit -a -m "piekna Nazwa"
+[branchLokalny 05086c3] piekna Nazwa
+ Committer: DziedzicW <WojtekDz.@Developers-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+Developers-MacBook-Pro:GitSin WojtekDz.$ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:DziedzicW/GitSin.git'
+Developers-MacBook-Pro:GitSin WojtekDz.$ git checkout -b master
+Switched to a new branch 'master'
+Developers-MacBook-Pro:GitSin WojtekDz.$ git push origin master
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (18/18), 9.40 KiB | 0 bytes/s, done.
+Total 18 (delta 0), reused 0 (delta 0)
+To git@github.com:DziedzicW/GitSin.git
+   a9dbf8b..05086c3  master -> master
+Developers-MacBook-Pro:GitSin WojtekDz.$ git status
+On branch master
+nothing to commit, working directory clean
+Developers-MacBook-Pro:GitSin WojtekDz.$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   GitSin.xcodeproj/project.pbxproj
+	modified:   GitSin.xcodeproj/project.xcworkspace/xcuserdata/WojtekDz..xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   GitSin/main.m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	GitSin/SSingleton.h
+	GitSin/SSingleton.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Developers-MacBook-Pro:GitSin WojtekDz.$ git add .
+Developers-MacBook-Pro:GitSin WojtekDz.$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   GitSin.xcodeproj/project.pbxproj
+	modified:   GitSin.xcodeproj/project.xcworkspace/xcuserdata/WojtekDz..xcuserdatad/UserInterfaceState.xcuserstate
+	new file:   GitSin/SSingleton.h
+	new file:   GitSin/SSingleton.m
+	modified:   GitSin/main.m
+
+Developers-MacBook-Pro:GitSin WojtekDz.$ git commite
+git: 'commite' is not a git command. See 'git --help'.
+
+Did you mean this?
+	commit
+Developers-MacBook-Pro:GitSin WojtekDz.$ git commit
+Aborting commit due to empty commit message.
+Developers-MacBook-Pro:GitSin WojtekDz.$ git commit -a -m "singleton"
+[master 32f8410] singleton
+ Committer: DziedzicW <WojtekDz.@Developers-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 60 insertions(+), 3 deletions(-)
+ rewrite GitSin.xcodeproj/project.xcworkspace/xcuserdata/WojtekDz..xcuserdatad/UserInterfaceState.xcuserstate (87%)
+ create mode 100644 GitSin/SSingleton.h
+ create mode 100644 GitSin/SSingleton.m
+Developers-MacBook-Pro:GitSin WojtekDz.$ git push origin master
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 8.89 KiB | 0 bytes/s, done.
+Total 12 (delta 2), reused 0 (delta 0)
+To git@github.com:DziedzicW/GitSin.git
+   05086c3..32f8410  master -> master
+Developers-MacBook-Pro:GitSin WojtekDz.$
